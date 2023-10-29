@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useRef } from "react";
 import "./services.scss";
 import { motion, useInView } from "framer-motion";
@@ -31,7 +32,7 @@ const Services = () => {
       //   animate="animate"
       //   whileInView="animate"
       ref={ref}
-      animate={isInView && "animate"}
+      animate={"animate"}
     >
       <motion.div className="textContainer" variants={variants}>
         <p>
@@ -51,7 +52,7 @@ const Services = () => {
           <h1>
             <motion.b whileHover={{ color: "orange" }}>For Your</motion.b>{" "}
             Business.
-            <button>WHAT I DO?</button>
+            <button>WHAT I USE?</button>
           </h1>
         </div>
       </motion.div>
@@ -60,53 +61,81 @@ const Services = () => {
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>ReactJS (TypeScript & JavaScript)</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-            blanditiis odio ex incidunt quis beatae ducimus rerum fugiat
-            reiciendis praesentium quo, optio sit molestiae eos, ad magnam
-            quidem cumque quos.
+            Using ReactJS, I can build robust and scalable web applications that
+            provide a seamless user experience. By leveraging React's
+            component-based architecture, I develop reusable UI elements that
+            enhance code maintainability and promote efficient development
+            practices.
           </p>
-          <button>Go</button>
+          <button
+            onClick={() =>
+              (window.location.href =
+                "https://legacy.reactjs.org/docs/getting-started.html")
+            }
+          >
+            Go
+          </button>
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>NextJS</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-            blanditiis odio ex incidunt quis beatae ducimus rerum fugiat
-            reiciendis praesentium quo, optio sit molestiae eos, ad magnam
-            quidem cumque quos.
+            With Next.js, I can easily handle server-side rendering, allowing me
+            to generate dynamic web pages with pre-rendered content. This
+            results in improved SEO, faster initial page loads, and enhanced
+            user interactivity.
           </p>
-          <button>Go</button>
+          <button
+            onClick={() => (window.location.href = "https://nextjs.org/docs")}
+          >
+            Go
+          </button>
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>HTML, CSS, JavaScript</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-            blanditiis odio ex incidunt quis beatae ducimus rerum fugiat
-            reiciendis praesentium quo, optio sit molestiae eos, ad magnam
-            quidem cumque quos.
+            I strive to stay on top of the latest web development trends and
+            best practices, continuously expanding my knowledge and skills to
+            enhance the quality and efficiency of my work. I am committed to
+            writing clean, maintainable, and scalable code that adheres to
+            industry standards.
           </p>
-          <button>Go</button>
+          <button
+            onClick={() =>
+              (window.location.href =
+                "https://developer.mozilla.org/en-US/docs/Learn/CSS")
+            }
+          >
+            Go
+          </button>
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Bootstrap & Tailwind</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-            blanditiis odio ex incidunt quis beatae ducimus rerum fugiat
-            reiciendis praesentium quo, optio sit molestiae eos, ad magnam
-            quidem cumque quos.
+            By combining the strengths of Bootstrap and Tailwind CSS, I can
+            deliver websites that are not only aesthetically pleasing but also
+            mobile-friendly and optimized for different screen sizes. I focus on
+            creating intuitive and user-friendly experiences by leveraging the
+            responsive features and extensive component libraries provided by
+            these frameworks.
           </p>
-          <button>Go</button>
+          <button
+            onClick={() =>
+              (window.location.href = "https://v2.tailwindcss.com/docs")
+            }
+          >
+            Go
+          </button>
         </motion.div>
       </motion.div>
     </motion.div>
