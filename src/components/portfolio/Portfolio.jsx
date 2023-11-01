@@ -31,6 +31,13 @@ const items = [
     desc: "A PA Design online application that allows users to examine and learn about buildings, architecture, and interior design in a realistic manner. To contact the engineer and sign a working contract, the online application will include design images as well as real-life photos.",
     path: "https://pa-design.vercel.app/",
   },
+  {
+    id: 5,
+    title: "Văn Trung Portfolio",
+    img: "/portfolio-nextjs.png",
+    desc: "This is my main portfolio with a full everthing by using NextJS, Framer Motion & Tailwind CSS, with all that framework will make my website more interesting adn powerfull, easy to use in any device that you want. ",
+    path: "https://van-trung-portfolio.vercel.app/",
+  },
 ];
 
 const Single = ({ item }) => {
