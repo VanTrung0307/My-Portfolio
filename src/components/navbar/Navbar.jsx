@@ -28,6 +28,12 @@ const Navbar = () => {
           <a href="https://github.com/VanTrung0307">
             <img src="/github.png" alt="" />
           </a>
+          <a href="https://www.threads.net/@_vantrun">
+            <img src="/threads.png" alt="" />
+          </a>
+          <a href="https://www.tiktok.com/@liwzhong">
+            <img src="/tiktok.png" alt="" />
+          </a>
         </div>
       </div>
     </div>
